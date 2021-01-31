@@ -1,9 +1,11 @@
 <?php
-
+use yii\helpers\Html;
 /* @var $this yii\web\View */
 
 $this->title = 'My Yii Application';
 ?>
+
+<?= Html::a('Parser', ['site/parser', 'link' => 'https://gitlab.com/prog-positron/test-app-vacancy/-/raw/master/books.json'], ['class' => 'profile-link']) ?>
 
 <div class="site-index">
 

@@ -94,7 +94,8 @@ class Book extends \yii\db\ActiveRecord
      */
     public function uploadLinkImage($book_id, $file)
     {
-        $dir = getcwd() . '/backend/web/uploads/book/' . $book_id;
+        //$dir = getcwd() . '/backend/web/uploads/book/' . $book_id;
+        $dir = 'uploads/book/' . $book_id;
         $this->checkDir($dir);
         $filePath = $dir . '/' . $file->baseName . '.' . $file->extension;
         $path = 'uploads/book/' . $book_id . '/' . $file->baseName . '.' . $file->extension;

@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'isbn',
             'pageCount',
             'publishedDate',
-            'thumbnailUrl',
+            'thumbnailUrl:image',
             'shortDescription',
             'longDescription:ntext',
             'status',
